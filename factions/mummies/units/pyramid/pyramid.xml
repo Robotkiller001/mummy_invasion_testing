@@ -96,15 +96,6 @@
 			</shake>
 			<fade value="false"/>
 		</skill>
-		<skill>
-			<type value="upgrade"/>
-			<name value="upgrade_skill"/>
-			<ep-cost value="0" />
-			<speed value="300" />
-			<anim-speed value="300" />
-			<animation path="../pyramid/models/pyramid.g3d" />
-			<sound enabled="false" />
-		</skill>
 	</skills>
 	<commands>
 		<command>
@@ -115,24 +106,6 @@
 			<upgrade-requirements />
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="slave"/>
-		</command>
-		<command>
-			<type value="produce"/>
-			<name value="produce_mummy" />
-			<image path="../mummy/images/daemon.bmp"/>
-			<unit-requirements/>
-			<upgrade-requirements/>
-			<produce-skill value="produce_skill"/>
-			<produced-unit name="mummy"/>
-		</command>
-		<command>
-			<type value="upgrade"/>
-			<name value="get_power_of_ra"/>
-			<image path="../../upgrades/power_of_ra/images/ra.bmp" />
-			<unit-requirements />
-			<upgrade-requirements/>
-			<upgrade-skill value="upgrade_skill"/>
-			<produced-upgrade name="power_of_ra"/>
 		</command>
 	</commands>
 </unit>
