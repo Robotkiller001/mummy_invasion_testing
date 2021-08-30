@@ -2,14 +2,14 @@
 
 <faction>
 	<starting-resources>
-		<resource name="gold" amount="25"/>
-		<resource name="wood" amount="25"/>
-		<resource name="stone" amount="25"/>
+		<resource name="gold" amount="200"/>
+		<resource name="wood" amount="200"/>
+		<resource name="stone" amount="200"/>
 		<resource name="food" amount="0"/>
 	</starting-resources>
 	<starting-units>
 		<unit name="pyramid" amount="1"/>
-		<unit name="slave" amount="3"/>
+		<unit name="slave" amount="5"/>
 		<unit name="mummy" amount="5"/>
 		<unit name="obelisk" amount="1"/>
 	</starting-units>
@@ -24,7 +24,7 @@
 		</warrior-units>
 		<resource-producer-units/>
 		<building-units>
-			<unit name="obelisk" minimum="1"/>
+			<unit name="obelisk" minimum="15"/>
 		</building-units>
 		<upgrades/>
 		<static-values>
