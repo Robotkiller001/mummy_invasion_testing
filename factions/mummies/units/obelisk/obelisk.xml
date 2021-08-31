@@ -112,5 +112,14 @@
 			<upgrade-skill value="upgrade_skill"/>
 			<produced-upgrade name="power_of_ra"/>
 		</command>
+		<command>
+			<type value="upgrade"/>
+			<name value="receive_kiss"/>
+			<image path="../../upgrades/power_of_ra/images/ra.bmp" />
+			<unit-requirements />
+			<upgrade-requirements/>
+			<upgrade-skill value="upgrade_skill"/>
+			<produced-upgrade name="kiss_of_cleopatra"/>
+		</command>
 	</commands>
 </unit>
