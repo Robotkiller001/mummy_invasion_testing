@@ -11,7 +11,7 @@
 		<unit name="pyramid" amount="1"/>
 		<unit name="slave" amount="5"/>
 		<unit name="mummy" amount="5"/>
-		<unit name="obelisk" amount="1"/>
+		<unit name="obelisk" amount="0"/>
 	</starting-units>
 	<music value="true" path="music/asak-jadeflange.ogg"/>
 	<flat-particle-positions value="true"/>
