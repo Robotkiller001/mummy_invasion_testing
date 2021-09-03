@@ -12,6 +12,7 @@
 		<unit name="slave" amount="5"/>
 		<unit name="mummy" amount="5"/>
 		<unit name="obelisk" amount="0"/>
+		<unit name="air_pyramid" amount="2"/>
 	</starting-units>
 	<music value="true" path="music/asak-jadeflange.ogg"/>
 	<flat-particle-positions value="true"/>
