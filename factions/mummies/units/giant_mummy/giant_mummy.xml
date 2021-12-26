@@ -1,0 +1,162 @@
+<?xml version="1.0" standalone="no"?>
+
+<unit>
+	<parameters>
+		<size value="2"/>
+		<height value="3"/>
+		<max-hp value="1400" regeneration="10"/>
+		<max-ep value="0"/>
+		<armor value="30"/>
+		<armor-type value="organic"/>
+		<max-unit-count value="5"/>
+		<sight value="14"/>
+		<time value="40"/>
+		<multi-selection value="true"/>
+		<cellmap value="false"/>
+		<levels/>
+		<fields>
+			<field value="land"/>
+		</fields>
+		<properties/>
+			<light enabled="false"/>
+		<unit-requirements/>
+		<upgrade-requirements>
+			<upgrade name="power_of_ra"/>
+		</upgrade-requirements>
+		<resource-requirements>
+			<resource name="gold" amount="75"/>
+			<resource name="wood" amount="50"/>
+			<resource name="food" amount="0"/>
+		</resource-requirements>
+		<resources-stored/>
+		<image path="images/daemon.bmp"/>
+		<image-cancel path="../pyramid/images/tech_cancel.bmp"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="true">
+			<sound path="sounds/mummy_select1.wav"/>
+			<sound path="sounds/mummy_select2.wav"/>
+			<sound path="sounds/mummy_select3.wav"/>
+			<sound path="sounds/mummy_select4.wav"/>
+			<sound path="sounds/mummy_select5.wav"/>
+			<sound path="sounds/mummy_select6.wav"/>
+			<sound path="sounds/mummy_select7.wav"/>
+		</selection-sounds>
+		<command-sounds enabled="true">
+			<sound path="sounds/mummy_ack1.wav"/>
+			<sound path="sounds/mummy_ack2.wav"/>
+			<sound path="sounds/mummy_ack3.wav"/>
+			<sound path="sounds/mummy_ack4.wav"/>
+			<sound path="sounds/mummy_ack5.wav"/>
+		</command-sounds>
+
+	</parameters>
+
+	<skills>
+
+		<skill>
+			<type value="stop"/>
+			<name value="stop_skill"/>
+			<ep-cost value="0"/>
+			<speed value="1000"/>
+			<anim-speed value="40"/>
+			<animation path="models/mummy_standing.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="move"/>
+			<name value="move_skill"/>
+			<ep-cost value="0"/>
+			<speed value="230"/>
+			<anim-speed value="105"/>
+			<animation path="models/mummy_walking.g3d"/>
+			<sound enabled="true" start-time="0.2">
+				<sound-file path="sounds/behemoth_walk1.wav"/>
+				<sound-file path="sounds/behemoth_walk2.wav"/>
+			</sound>
+		</skill>
+
+		<skill>
+			<type value="attack"/>
+			<name value="attack_skill"/>
+			<ep-cost value="0"/>
+			<speed value="80"/>
+			<anim-speed value="80"/>
+			<animation path="models/mummy_attacking.g3d"/>
+			<sound enabled="true" start-time="0.1">
+				<sound-file path="sounds/mummy_attack11.wav"/>
+				<sound-file path="sounds/mummy_attack12.wav"/>
+				<sound-file path="sounds/mummy_attack13.wav"/>
+				<sound-file path="sounds/mummy_attack14.wav"/>
+				<sound-file path="sounds/mummy_attack10.wav"/>
+				<!--sound-file path="sounds/mummy_attack1.wav"/>
+				<sound-file path="sounds/mummy_attack2.wav"/>
+				<sound-file path="sounds/mummy_attack3.wav"/>
+				<sound-file path="sounds/mummy_attack4.wav"/>
+				<sound-file path="sounds/mummy_attack5.wav"/>
+				<sound-file path="sounds/mummy_attack6.wav"/>
+				<sound-file path="sounds/mummy_attack7.wav"/>
+				<sound-file path="sounds/mummy_attack8.wav"/>
+				<sound-file path="sounds/mummy_attack9.wav"/-->
+			</sound>
+			<attack-strength value="130"/>
+			<attack-var value="40"/>
+			<attack-range value="2"/>
+			<attack-type value="slashing"/>
+			<attack-fields>
+				<field value="land"/>
+			</attack-fields>
+			<attack-start-time value="0.45"/>
+			<projectile value="false"/>
+			<splash value="false"/>
+		</skill>
+
+		<skill>
+			<type value="die"/>
+			<name value="die_skill"/>
+			<ep-cost value="0"/>
+			<speed value="120"/>
+			<anim-speed value="20"/>
+			<animation path="models/mummy_dying.g3d"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="sounds/mummy_die1.wav"/>
+				<sound-file path="sounds/mummy_die2.wav"/>
+				<sound-file path="sounds/mummy_die3.wav"/>
+				<sound-file path="sounds/mummy_die4.wav"/>
+			</sound>
+			<fade value="false"/>
+		</skill>
+	</skills>
+
+	<commands>
+
+		<command>
+			<type value="stop"/>
+			<name value="stop"/>
+			<image path="../pyramid/images/tech_stop.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+		</command>
+
+		<command>
+			<type value="move"/>
+			<name value="move"/>
+			<image path="../pyramid/images/tech_move.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+		</command>
+
+		<command>
+			<type value="attack"/>
+			<name value="attack"/>
+			<image path="images/mummy_attack.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<attack-skill value="attack_skill"/>
+		</command>
+
+	</commands>
+</unit>
