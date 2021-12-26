@@ -4,7 +4,7 @@
 	<parameters>
 		<size value="1"/>
 		<height value="2"/>
-		<max-hp value="600" regeneration="10"/>
+		<max-hp value="500" regeneration="10"/>
 		<max-ep value="0"/>
 		<armor value="10"/>
 		<armor-type value="organic"/>
@@ -74,10 +74,10 @@
 			<type value="attack"/>
 			<name value="attack_skill"/>
 			<ep-cost value="0"/>
-			<speed value="100"/>
-			<anim-speed value="100"/>
+			<speed value="80"/>
+			<anim-speed value="80"/>
 			<animation path="models/mummy_attacking.g3d"/>
-			<sound enabled="true" start-time="0.0">
+			<sound enabled="true" start-time="0.1">
 				<sound-file path="sounds/mummy_attack11.wav"/>
 				<sound-file path="sounds/mummy_attack12.wav"/>
 				<sound-file path="sounds/mummy_attack13.wav"/>
@@ -94,13 +94,13 @@
 				<sound-file path="sounds/mummy_attack9.wav"/-->
 			</sound>
 			<attack-strength value="70"/>
-			<attack-var value="40"/>
+			<attack-var value="30"/>
 			<attack-range value="1"/>
 			<attack-type value="slashing"/>
 			<attack-fields>
 				<field value="land"/>
 			</attack-fields>
-			<attack-start-time value="0.3"/>
+			<attack-start-time value="0.45"/>
 			<projectile value="false"/>
 			<splash value="false"/>
 		</skill>
