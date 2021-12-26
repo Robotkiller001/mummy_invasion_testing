@@ -3,7 +3,7 @@
 <upgrade>
 	<image path="../power_of_ra/images/ra.bmp"/>
 	<image-cancel path="images/upgrade_cancel.bmp"/>
-	<time value="600"/>
+	<time value="900"/>
 	<unit-requirements/>
 	<upgrade-requirements>
 		<upgrade name="power_of_ra"/>
@@ -15,13 +15,14 @@
 	</resource-requirements>
 	<effects>
 		<unit name="mummy"/>
+		<unit name="giant_mummy"/>
 	</effects>
-	<max-hp value="200"/>
+	<max-hp value="300"  regeneration="5"/>
 	<max-ep value="0"/>
 	<sight value="0"/>
-	<attack-strenght value="20"/>
+	<attack-strenght value="50"/>
 	<attack-range value="0"/>
-	<armor value="5"/>
-	<move-speed value="0"/>
+	<armor value="10"/>
+	<move-speed value="20"/>
 	<production-speed value="0"/>
 </upgrade>
