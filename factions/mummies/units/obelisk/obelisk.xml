@@ -104,6 +104,15 @@
 			<produced-unit name="mummy"/>
 		</command>
 		<command>
+			<type value="produce"/>
+			<name value="produce_giant_mummy" />
+			<image path="../giant_mummy/images/daemon.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="giant_mummy"/>
+		</command>
+		<command>
 			<type value="upgrade"/>
 			<name value="get_power_of_ra"/>
 			<image path="../../upgrades/power_of_ra/images/ra.bmp" />
