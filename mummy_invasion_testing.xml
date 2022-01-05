@@ -24,7 +24,7 @@
 	</armor-types>
 
 	<damage-multipliers>
-		<damage-multiplier attack="arrow" armor="mummy" value="1.25"/>
+		<damage-multiplier attack="arrow" armor="mummy" value="1.35"/>
 		<damage-multiplier attack="arrow" armor="organic" value="1.25"/>
 		<damage-multiplier attack="arrow" armor="leather" value="1.25"/>
 		<damage-multiplier attack="arrow" armor="wood" value="0.75"/>
@@ -46,14 +46,14 @@
 		<damage-multiplier attack="magic" armor="wood" value="0.75"/>
 		<damage-multiplier attack="magic" armor="stone" value="0.5"/>
 
-		<damage-multiplier attack="piercing" armor="mummy" value="1.25"/>
+		<damage-multiplier attack="piercing" armor="mummy" value="1.35"/>
 		<damage-multiplier attack="piercing" armor="organic" value="1.25"/>
 		<damage-multiplier attack="piercing" armor="leather" value="1.25"/>
 		<damage-multiplier attack="piercing" armor="wood" value="0.75"/>
 		<damage-multiplier attack="piercing" armor="metal" value="0.75"/>
 		<damage-multiplier attack="piercing" armor="stone" value="0.5"/>
 
-		<damage-multiplier attack="impact" armor="mummy" value="0.75"/>
+		<damage-multiplier attack="impact" armor="mummy" value="0.85"/>
 		<damage-multiplier attack="impact" armor="organic" value="0.75"/>
 		<damage-multiplier attack="impact" armor="leather" value="0.75"/>
 		<damage-multiplier attack="impact" armor="metal" value="1.5"/>

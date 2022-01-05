@@ -10,7 +10,7 @@
 	<starting-units>
 		<unit name="pyramid" amount="1"/>
 		<unit name="slave" amount="5"/>
-		<unit name="mummy" amount="5"/>
+		<unit name="mummy" amount="4"/>
 		<unit name="obelisk" amount="0"/>
 		<unit name="air_pyramid" amount="2"/>
 	</starting-units>
