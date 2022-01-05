@@ -6,7 +6,7 @@
 		<height value="2"/>
 		<max-hp value="500" regeneration="10"/>
 		<max-ep value="0"/>
-		<armor value="10"/>
+		<armor value="5"/>
 		<armor-type value="mummy"/>
 		<sight value="12"/>
 		<time value="25"/>
