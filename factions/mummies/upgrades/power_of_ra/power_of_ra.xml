@@ -3,7 +3,7 @@
 <upgrade>
 	<image path="images/ra.bmp"/>
 	<image-cancel path="images/upgrade_cancel.bmp"/>
-	<time value="1100"/>
+	<time value="1200"/>
 	<unit-requirements/>
 	<upgrade-requirements/>
 	<resource-requirements>
