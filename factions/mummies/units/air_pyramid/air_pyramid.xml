@@ -4,7 +4,7 @@
 		<size value="2"/>
 		<height value="2"/>
 		<ai-build-size value="3"/>
-		<max-hp value="3000" regeneration="5"/>
+		<max-hp value="6000" regeneration="5"/>
 		<max-ep value="0"/>
 		<armor value="20"/>
 		<armor-type value="wood"/>
@@ -88,15 +88,15 @@
 			<type value="attack"/>
 			<name value="attack_skill"/>
 			<ep-cost value="0"/>
-			<speed value="360"/>
-			<anim-speed value="250"/>
+			<speed value="120"/>
+			<anim-speed value="120"/>
 			<animation path="models/air_pyramid_attacking.g3d"/>
 			<sound enabled="true" start-time="0">
 				<sound-file path="$COMMONDATAPATH/sounds/ab_attack1.wav"/>
 				<sound-file path="$COMMONDATAPATH/sounds/ab_attack2.wav"/>
 			</sound>
-			<attack-strength value="600"/>
-			<attack-var value="75"/>
+			<attack-strength value="1000"/>
+			<attack-var value="100"/>
 			<attack-range value="1024"/>
 			<attack-type value="piercing"/>
 			<attack-start-time value="0.0"/>
