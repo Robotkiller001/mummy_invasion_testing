@@ -1,0 +1,172 @@
+<?xml version="1.0" standalone="no"?>
+
+<unit>
+	<parameters>
+		<size value="2"/>
+		<height value="3"/>
+		<max-hp value="2500" regeneration="15"/>
+		<max-ep value="0"/>
+		<armor value="60"/>
+		<armor-type value="mummy"/>
+		<max-unit-count value="1"/>
+		<sight value="14"/>
+		<time value="50"/>
+		<multi-selection value="true"/>
+		<cellmap value="false"/>
+		<levels/>
+		<fields>
+			<field value="land"/>
+		</fields>
+		<properties/>
+			<light enabled="false"/>
+		<unit-requirements/>
+		<upgrade-requirements>
+			<upgrade name="kiss_of_cleopatra"/>
+		</upgrade-requirements>
+		<resource-requirements>
+			<resource name="gold" amount="100"/>
+			<resource name="wood" amount="50"/>
+			<resource name="food" amount="0"/>
+		</resource-requirements>
+		<resources-stored/>
+		<image path="images/daemon.bmp"/>
+		<image-cancel path="../pyramid/images/tech_cancel.bmp"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="true">
+			<sound path="sounds/mummy_select1.wav"/>
+			<sound path="sounds/mummy_select2.wav"/>
+			<sound path="sounds/mummy_select3.wav"/>
+			<sound path="sounds/mummy_select4.wav"/>
+			<sound path="sounds/mummy_select5.wav"/>
+			<sound path="sounds/mummy_select6.wav"/>
+			<sound path="sounds/mummy_select7.wav"/>
+		</selection-sounds>
+		<command-sounds enabled="true">
+			<sound path="sounds/mummy_ack1.wav"/>
+			<sound path="sounds/mummy_ack2.wav"/>
+			<sound path="sounds/mummy_ack3.wav"/>
+			<sound path="sounds/mummy_ack4.wav"/>
+			<sound path="sounds/mummy_ack5.wav"/>
+		</command-sounds>
+
+	</parameters>
+
+	<skills>
+
+		<skill>
+			<type value="stop"/>
+			<name value="stop_skill"/>
+			<ep-cost value="0"/>
+			<speed value="1000"/>
+			<anim-speed value="40"/>
+			<animation path="models/mummies_cluster_standing.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="move"/>
+			<name value="move_skill"/>
+			<ep-cost value="0"/>
+			<speed value="320"/>
+			<anim-speed value="70"/>
+			<animation path="models/mummies_cluster_moving.g3d"/>
+			<sound enabled="true" start-time="0.2">
+				<sound-file path="sounds/behemoth_walk1.wav"/>
+				<sound-file path="sounds/behemoth_walk2.wav"/>
+			</sound>
+		</skill>
+
+		<skill>
+			<type value="attack"/>
+			<name value="attack_skill"/>
+			<ep-cost value="0"/>
+			<speed value="60"/>
+			<anim-speed value="60"/>
+			<animation path="models/mummies_cluster_attacking.g3d"/>
+			<sound enabled="true" start-time="0.1">
+				<sound-file path="sounds/mummy_attack11.wav"/>
+				<sound-file path="sounds/mummy_attack12.wav"/>
+				<sound-file path="sounds/mummy_attack13.wav"/>
+				<sound-file path="sounds/mummy_attack14.wav"/>
+				<sound-file path="sounds/mummy_attack10.wav"/>
+				<!--sound-file path="sounds/mummy_attack1.wav"/>
+				<sound-file path="sounds/mummy_attack2.wav"/>
+				<sound-file path="sounds/mummy_attack3.wav"/>
+				<sound-file path="sounds/mummy_attack4.wav"/>
+				<sound-file path="sounds/mummy_attack5.wav"/>
+				<sound-file path="sounds/mummy_attack6.wav"/>
+				<sound-file path="sounds/mummy_attack7.wav"/>
+				<sound-file path="sounds/mummy_attack8.wav"/>
+				<sound-file path="sounds/mummy_attack9.wav"/-->
+			</sound>
+			<attack-strength value="220"/>
+			<attack-var value="50"/>
+			<attack-range value="2"/>
+			<attack-type value="slashing"/>
+			<attack-fields>
+				<field value="land"/>
+			</attack-fields>
+			<attack-start-time value="0.45"/>
+			<projectile value="false"/>
+			<splash value="true">
+				<radius value="1"/>
+				<damage-all value="false"/>
+				<particle value="false"/>
+			</splash>
+		</skill>
+
+		<skill>
+			<type value="die"/>
+			<name value="die_skill"/>
+			<ep-cost value="0"/>
+			<speed value="120"/>
+			<anim-speed value="40"/>
+			<animation path="models/mummies_cluster_die.g3d"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="sounds/mummy_die1.wav"/>
+				<sound-file path="sounds/mummy_die2.wav"/>
+				<sound-file path="sounds/mummy_die3.wav"/>
+				<sound-file path="sounds/mummy_die4.wav"/>
+			</sound>
+			<fade value="true"/>
+			<spawn start-time="0.4">
+				<unit value="mummy"/>
+				<amount value="5"/>
+				<health-percent min="80" max="100"/>
+				<probability value="100"/>
+			</spawn>
+		</skill>
+	</skills>
+
+	<commands>
+
+		<command>
+			<type value="stop"/>
+			<name value="stop"/>
+			<image path="../pyramid/images/tech_stop.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+		</command>
+
+		<command>
+			<type value="move"/>
+			<name value="move"/>
+			<image path="../pyramid/images/tech_move.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+		</command>
+
+		<command>
+			<type value="attack"/>
+			<name value="attack"/>
+			<image path="images/mummy_attack.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<attack-skill value="attack_skill"/>
+		</command>
+
+	</commands>
+</unit>

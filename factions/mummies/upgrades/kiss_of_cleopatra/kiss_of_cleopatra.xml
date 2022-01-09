@@ -3,7 +3,7 @@
 <upgrade>
 	<image path="../power_of_ra/images/ra.bmp"/>
 	<image-cancel path="images/upgrade_cancel.bmp"/>
-	<time value="800"/>
+	<time value="900"/>
 	<unit-requirements/>
 	<upgrade-requirements>
 		<upgrade name="power_of_ra"/>
