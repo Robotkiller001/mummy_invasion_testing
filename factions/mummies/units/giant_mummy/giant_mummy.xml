@@ -33,20 +33,20 @@
 		<image-cancel path="../pyramid/images/tech_cancel.bmp"/>
 		<meeting-point value="false"/>
 		<selection-sounds enabled="true">
-			<sound path="sounds/mummy_select1.wav"/>
-			<sound path="sounds/mummy_select2.wav"/>
-			<sound path="sounds/mummy_select3.wav"/>
-			<sound path="sounds/mummy_select4.wav"/>
-			<sound path="sounds/mummy_select5.wav"/>
-			<sound path="sounds/mummy_select6.wav"/>
-			<sound path="sounds/mummy_select7.wav"/>
+			<sound path="../mummy/sounds/mummy_select1.wav"/>
+			<sound path="../mummy/sounds/mummy_select2.wav"/>
+			<sound path="../mummy/sounds/mummy_select3.wav"/>
+			<sound path="../mummy/sounds/mummy_select4.wav"/>
+			<sound path="../mummy/sounds/mummy_select5.wav"/>
+			<sound path="../mummy/sounds/mummy_select6.wav"/>
+			<sound path="../mummy/sounds/mummy_select7.wav"/>
 		</selection-sounds>
 		<command-sounds enabled="true">
-			<sound path="sounds/mummy_ack1.wav"/>
-			<sound path="sounds/mummy_ack2.wav"/>
-			<sound path="sounds/mummy_ack3.wav"/>
-			<sound path="sounds/mummy_ack4.wav"/>
-			<sound path="sounds/mummy_ack5.wav"/>
+			<sound path="../mummy/sounds/mummy_ack1.wav"/>
+			<sound path="../mummy/sounds/mummy_ack2.wav"/>
+			<sound path="../mummy/sounds/mummy_ack3.wav"/>
+			<sound path="../mummy/sounds/mummy_ack4.wav"/>
+			<sound path="../mummy/sounds/mummy_ack5.wav"/>
 		</command-sounds>
 
 	</parameters>
@@ -84,20 +84,11 @@
 			<anim-speed value="80"/>
 			<animation path="models/mummy_attacking.g3d"/>
 			<sound enabled="true" start-time="0.1">
-				<sound-file path="sounds/mummy_attack11.wav"/>
-				<sound-file path="sounds/mummy_attack12.wav"/>
-				<sound-file path="sounds/mummy_attack13.wav"/>
-				<sound-file path="sounds/mummy_attack14.wav"/>
-				<sound-file path="sounds/mummy_attack10.wav"/>
-				<!--sound-file path="sounds/mummy_attack1.wav"/>
-				<sound-file path="sounds/mummy_attack2.wav"/>
-				<sound-file path="sounds/mummy_attack3.wav"/>
-				<sound-file path="sounds/mummy_attack4.wav"/>
-				<sound-file path="sounds/mummy_attack5.wav"/>
-				<sound-file path="sounds/mummy_attack6.wav"/>
-				<sound-file path="sounds/mummy_attack7.wav"/>
-				<sound-file path="sounds/mummy_attack8.wav"/>
-				<sound-file path="sounds/mummy_attack9.wav"/-->
+				<sound-file path="../mummy/sounds/mummy_attack11.wav"/>
+				<sound-file path="../mummy/sounds/mummy_attack12.wav"/>
+				<sound-file path="../mummy/sounds/mummy_attack13.wav"/>
+				<sound-file path="../mummy/sounds/mummy_attack14.wav"/>
+				<sound-file path="../mummy/sounds/mummy_attack10.wav"/>
 			</sound>
 			<attack-strength value="130"/>
 			<attack-var value="40"/>
@@ -119,10 +110,10 @@
 			<anim-speed value="20"/>
 			<animation path="models/mummy_dying.g3d"/>
 			<sound enabled="true" start-time="0">
-				<sound-file path="sounds/mummy_die1.wav"/>
-				<sound-file path="sounds/mummy_die2.wav"/>
-				<sound-file path="sounds/mummy_die3.wav"/>
-				<sound-file path="sounds/mummy_die4.wav"/>
+				<sound-file path="../mummy/sounds/mummy_die1.wav"/>
+				<sound-file path="../mummy/sounds/mummy_die2.wav"/>
+				<sound-file path="../mummy/sounds/mummy_die3.wav"/>
+				<sound-file path="../mummy/sounds/mummy_die4.wav"/>
 			</sound>
 			<fade value="false"/>
 		</skill>

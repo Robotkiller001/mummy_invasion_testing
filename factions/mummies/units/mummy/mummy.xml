@@ -83,15 +83,6 @@
 				<sound-file path="sounds/mummy_attack13.wav"/>
 				<sound-file path="sounds/mummy_attack14.wav"/>
 				<sound-file path="sounds/mummy_attack10.wav"/>
-				<!--sound-file path="sounds/mummy_attack1.wav"/>
-				<sound-file path="sounds/mummy_attack2.wav"/>
-				<sound-file path="sounds/mummy_attack3.wav"/>
-				<sound-file path="sounds/mummy_attack4.wav"/>
-				<sound-file path="sounds/mummy_attack5.wav"/>
-				<sound-file path="sounds/mummy_attack6.wav"/>
-				<sound-file path="sounds/mummy_attack7.wav"/>
-				<sound-file path="sounds/mummy_attack8.wav"/>
-				<sound-file path="sounds/mummy_attack9.wav"/-->
 			</sound>
 			<attack-strength value="70"/>
 			<attack-var value="30"/>
