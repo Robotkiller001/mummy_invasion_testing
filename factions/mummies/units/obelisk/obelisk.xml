@@ -98,7 +98,7 @@
 		<command>
 			<type value="produce"/>
 			<name value="produce_mummy" />
-			<image path="../mummy/images/daemon.bmp"/>
+			<image path="../mummy/images/mummy.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<produce-skill value="produce_skill"/>
@@ -107,11 +107,20 @@
 		<command>
 			<type value="produce"/>
 			<name value="produce_giant_mummy" />
-			<image path="../giant_mummy/images/daemon.bmp"/>
+			<image path="../giant_mummy/images/giant_mummy.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="giant_mummy"/>
+		</command>
+		<command>
+			<type value="produce"/>
+			<name value="produce_mummies_cluster" />
+			<image path="../mummies_cluster/images/mummies_cluster.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="mummies_cluster"/>
 		</command>
 		<command>
 			<type value="upgrade"/>
